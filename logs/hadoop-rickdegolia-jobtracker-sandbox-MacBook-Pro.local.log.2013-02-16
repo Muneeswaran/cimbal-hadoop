@@ -1,0 +1,28 @@
+2013-02-16 19:24:31,995 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = sandbox-MacBook-Pro.local/10.0.1.7
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-02-16 19:24:34,266 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-02-16 19:24:34,368 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-02-16 19:24:34,386 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-02-16 19:24:34,386 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2013-02-16 19:24:37,023 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2013-02-16 19:24:40,675 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:128)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2200)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+
+2013-02-16 19:24:40,698 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at sandbox-MacBook-Pro.local/10.0.1.7
+************************************************************/

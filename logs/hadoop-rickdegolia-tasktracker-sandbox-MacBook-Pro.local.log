@@ -1,0 +1,25 @@
+2013-02-17 10:55:27,919 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = sandbox-MacBook-Pro.local/10.0.1.58
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-02-17 10:55:29,173 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-02-17 10:55:29,426 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-02-17 10:55:29,430 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-02-17 10:55:29,430 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: TaskTracker metrics system started
+2013-02-17 10:55:30,989 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-02-17 10:55:30,993 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2013-02-17 10:55:31,088 ERROR org.apache.hadoop.mapred.TaskTracker: Can not start task tracker because java.lang.IllegalArgumentException: Does not contain a valid host:port authority: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:128)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2560)
+	at org.apache.hadoop.mapred.TaskTracker.<init>(TaskTracker.java:1426)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3742)
+
+2013-02-17 10:55:31,089 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at sandbox-MacBook-Pro.local/10.0.1.58
+************************************************************/
