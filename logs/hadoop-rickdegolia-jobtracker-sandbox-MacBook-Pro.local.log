@@ -1,17 +1,17 @@
-2013-02-17 10:55:28,721 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+2013-02-19 10:17:43,325 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting JobTracker
-STARTUP_MSG:   host = sandbox-MacBook-Pro.local/10.0.1.58
+STARTUP_MSG:   host = sandbox-MacBook-Pro.local/10.0.1.32
 STARTUP_MSG:   args = []
 STARTUP_MSG:   version = 1.0.4
 STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
 ************************************************************/
-2013-02-17 10:55:29,228 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
-2013-02-17 10:55:29,296 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
-2013-02-17 10:55:29,312 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
-2013-02-17 10:55:29,312 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
-2013-02-17 10:55:29,700 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
-2013-02-17 10:55:30,921 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: local
+2013-02-19 10:17:46,567 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-02-19 10:17:47,615 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-02-19 10:17:47,619 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-02-19 10:17:47,619 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2013-02-19 10:17:49,586 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2013-02-19 10:17:53,267 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: local
 	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
 	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:128)
 	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2560)
@@ -22,7 +22,35 @@ STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/b
 	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
 	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
 
-2013-02-17 10:55:30,922 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+2013-02-19 10:17:53,269 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
 /************************************************************
-SHUTDOWN_MSG: Shutting down JobTracker at sandbox-MacBook-Pro.local/10.0.1.58
+SHUTDOWN_MSG: Shutting down JobTracker at sandbox-MacBook-Pro.local/10.0.1.32
+************************************************************/
+2013-02-19 10:31:38,454 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = sandbox-MacBook-Pro.local/10.0.1.32
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-02-19 10:31:39,808 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-02-19 10:31:43,852 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-02-19 10:31:43,854 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-02-19 10:31:43,854 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2013-02-19 10:31:44,668 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2013-02-19 10:31:45,795 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:128)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2200)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+
+2013-02-19 10:31:45,797 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at sandbox-MacBook-Pro.local/10.0.1.32
 ************************************************************/
